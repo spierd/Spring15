@@ -1,0 +1,5 @@
+#This file contains any misc regex commands that I may find useful. 
+
+#add backslashes and a space to the end of lines 
+#useful for commands that take many arguments
+...|sed 's/\(.*\)/\1\\ /'
