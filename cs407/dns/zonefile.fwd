@@ -1,0 +1,19 @@
+$TTL 1h
+@       IN      SOA     ns1.spierd.cs407.net. root.spierd.cs407.net. (
+                2015022300
+                6h      ;refresh
+                2h      ;retry
+                7d      ;expire
+                1h      ;minimum
+)
+        IN      NS      ns1.spierd.cs407.net.
+        IN      NS      ns1.cs407.net.
+
+ns1     IN      A       10.103.36.138
+auth    IN      A       10.103.36.138
+www     IN      A       10.103.36.137
+test    IN      A       10.103.36.136
+
+ntp             IN      CNAME   auth
+loghost         IN      CNAME   auth
+directory       IN      CNAME   auth
