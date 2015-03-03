@@ -1,0 +1,15 @@
+
+$TTL 1h
+@       IN      SOA     ns1.spierd.cs407.net. root.spierd.cs407.net. (
+                2015022304
+                6h      ;refresh
+                2h      ;retry
+                7d      ;expire
+                1h      ;minimum
+)
+@       IN      NS      ns1.spierd.cs407.net.
+
+139     IN      PTR     files.spierd.cs407.net.
+138     IN      PTR     auth.spierd.cs407.net.
+137     IN      PTR     www.spierd.cs407.net.
+136     IN      PTR     test.spierd.cs407.net.
