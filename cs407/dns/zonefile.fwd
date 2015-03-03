@@ -1,6 +1,6 @@
 $TTL 1h
 @       IN      SOA     ns1.spierd.cs407.net. root.spierd.cs407.net. (
-                2015022300
+                2015022307
                 6h      ;refresh
                 2h      ;retry
                 7d      ;expire
@@ -9,6 +9,9 @@ $TTL 1h
         IN      NS      ns1.spierd.cs407.net.
         IN      NS      ns1.cs407.net.
 
+@       IN      A       10.103.36.137
+
+files   IN      A       10.103.36.139
 ns1     IN      A       10.103.36.138
 auth    IN      A       10.103.36.138
 www     IN      A       10.103.36.137
@@ -17,3 +20,12 @@ test    IN      A       10.103.36.136
 ntp             IN      CNAME   auth
 loghost         IN      CNAME   auth
 directory       IN      CNAME   auth
+
+auth    IN SSHFP 1 1 e18b8c7e66fcdee02fc848fd399184e30e8f4212
+www     IN SSHFP 1 1 c2ca41149888668848796796caedb041c6f6f610
+test    IN SSHFP 1 1 27195c6a31f569071d71a3b35d8c39dff2823e7b
+
+auth    IN SSHFP 2 1 339e3dafde6e05fea7e2cf53176dc48415124e8d
+www     IN SSHFP 2 1 37d3247d945771705a82e71f4df83129a24a9e90
+test    IN SSHFP 2 1 a68e50537e6a5f77bc6b766e9d3b09c4c9ba16a0
+
