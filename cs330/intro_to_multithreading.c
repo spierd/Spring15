@@ -1,7 +1,9 @@
 /*
  * Author: Dan Spier
  * Date: March 1, 2015
- * Description: This program demonstrates the concept of multithreading.
+ * Description: This program demonstrates the concept of multithreading. 
+ * 26 threads are created. Each thread will print a given letter of the 
+ * alphabet 100 times.
  * Environment: FreeBSD 10.1, clang 3.4.1 
  * Notes: Adapted from "Bored Bankers" problem by Amos Confer.
  */
